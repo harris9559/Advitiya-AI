@@ -3,12 +3,12 @@ import os
 import json
 from datetime import datetime
 from typing import Tuple
-from dotenv import load_dotenv
+import streamlit as st
 from groq import Groq
 from cryptography.fernet import Fernet
 
 # Load environment variables
-load_dotenv()
+groq_key = st.secrets["GROQ_API_KEY"] 
 
 # Constants
 SUPPORTED_LANGUAGES = ["Python", "JavaScript", "Java", "C++", "PHP", "Ruby", "Go", "Rust", "Other"]

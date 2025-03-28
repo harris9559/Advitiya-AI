@@ -243,7 +243,7 @@ def main():
     
     # Main interface
     st.title("🔐 Advitiya AI")
-    st.markdown("Welcome to Advitiya AI - Your Advanced Security Analysis Assistant powered by Llama 3")
+    st.markdown("Welcome to Advitiya AI Made by Harshit Pandey - Your Advanced Security Analysis Assistant powered by Llama 3")
     
     # Create tabs
     tab1, tab2, tab3 = st.tabs(["💬 Interactive Chat", "🔍 Static Analysis", "🛡️ Vulnerability Analysis"])

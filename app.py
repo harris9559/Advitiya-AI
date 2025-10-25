@@ -14,7 +14,7 @@ groq_key = st.secrets["GROQ_API_KEY"]
 SUPPORTED_LANGUAGES = ["Python", "JavaScript", "Java", "C++", "PHP", "Ruby", "Go", "Rust", "Other"]
 SCAN_TYPES = ["Nmap", "Nikto", "OWASP ZAP", "Burp Suite", "Custom Log", "Network Scan", 
               "Web Application Scan", "Container Scan", "Cloud Security Scan"]
-MODELS = ["llama3-8b-8192", "mixtral-8x7b-32768", "gemma-7b-it"]
+MODELS = ["llama-3.1-8b-instant", "mixtral-8x7b-32768", "gemma-7b-it"]
 
 # Initialize session state
 if 'chat_history' not in st.session_state:

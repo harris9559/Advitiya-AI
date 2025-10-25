@@ -67,7 +67,7 @@ def clear_api_key():
     if os.path.exists('api_key.enc'):
         os.remove('api_key.enc')
 
-def fetch_groq_response(prompt: str, api_key: str, model: str = "llama3-8b-8192") -> Tuple[str, bool]:
+def fetch_groq_response(prompt: str, api_key: str, model: str = "'llama-3.1-8b-instant'") -> Tuple[str, bool]:
     """Fetch response from Groq API with enhanced error handling"""
     try:
         client = Groq(api_key=api_key)
